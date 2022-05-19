@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #333;
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 1rem;
+    }
+
+    .mainContentWrapper {
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .mainContent {
+            padding: 2rem;
+            position: relative;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: #333;
+        padding: 2rem 4rem;
+        margin-top: auto;
+        font-size: 0.75rem;
+    }
+
+}

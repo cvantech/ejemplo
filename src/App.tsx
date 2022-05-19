@@ -1,12 +1,7 @@
 
 import React from "react";
+import Main from "./layout/Main";
 
-const App = () => {
-    return (
-        <h1>
-            Welcome to React App thats build using Webpack and Babel separately
-        </h1>
-    )
-}
+const App = () => <Main/>
 
 export default App
