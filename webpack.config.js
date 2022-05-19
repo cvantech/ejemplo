@@ -72,6 +72,24 @@ module.exports={
                 test: /\.(js|ts|jsx|tsx)$/,    //kind of file extension this rule should look for and apply in test
                 exclude: /node_modules/, //folder to be excluded
                 use:  'babel-loader' //loader which we are going to use
+            },
+            {
+                test: /\.(css|sass|scss)$/,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    'css-loader',
+                    // Compiles Sass to CSS
+                    'sass-loader',
+                ]  
+            },
+            {
+                test: /\.svg$/,
+                use: [{
+                    loader: 'svg-url-loader',
+                    options: { limit: 10000 }
+                }],
             }
         ]
     }
