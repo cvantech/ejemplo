@@ -10,7 +10,7 @@ const Main = () => {
         <div className="main">
             <Navbar/>
             <div className="mainContent">
-                <h1>You are in Main, start building here!</h1>
+                <h1>You se hizo cambio en dev, listo para jugars</h1>
             </div>
             <Footer/>
         </div>
